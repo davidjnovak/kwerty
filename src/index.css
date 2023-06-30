@@ -10,9 +10,8 @@ html{
 }
 header{
     font-family:'Trebuchet MS',sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     height:100px;
-
 }
 .transparentDiv
 {
@@ -30,22 +29,47 @@ header{
     display: flex;
     flex-direction: row;
     align-items: flex-start
-}
-.statContainer{
-    text-align: left;
-    top:0px;
-    margin: auto;
-    padding: 10px;
-    font-size: 40px;
-    width: 25%;
-    font-family:'Trebuchet MS',sans-serif
-}
+}.statContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .statContainer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .statContainer button:hover {
+    background-color: #45a049;
+  }
+  
+  .statContainer button:active {
+    background-color: #3e8e41;
+  }
+  
 .inputContainer{
     text-align: left;
     margin: 10px;
     padding: 10px;
 }
 .inputBox{
+    color: transparent;
+    text-shadow: 0 0 0 #000000;
     font-family: courier;
     background-color: antiquewhite;
     border: 2px solid rgb(20, 20, 20);
@@ -76,3 +100,25 @@ footer{
     bottom:0;
     right:0;
 }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .button:active {
+    background-color: #3e8e41;
+  }
+  

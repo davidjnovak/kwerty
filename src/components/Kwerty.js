@@ -1,11 +1,11 @@
 import React from "react";
-import Input from "./Input";
+import Game from "./Game";
 
 const Kwerty = () =>{
     return(
         <>
         <header> <h1>kwerty</h1></header>
-        <Input/>
+        <Game/>
         </>
     );
 };
