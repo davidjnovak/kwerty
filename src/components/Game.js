@@ -75,14 +75,8 @@ class Game extends Component {
   chooseRandomText() {
     this.textComplete = false;
     this.started = false;
-    const difficultyThreshold = 0.2;
-    var textDifficulty;
     var index;
     index = Math.floor(Math.random() * this.NUMBER_OF_TEXTS);
-    // while(textDifficulty < difficultyThreshold){
-    //     index = Math.floor(Math.random() * NUMBER_OF_TEXTS);
-    //     textDifficulty = textData[index][1]
-    // }
     var imported = textData[index][0];
     var wordList = imported.split(" ");
     const lastWordIndex = wordList.length - 1;
