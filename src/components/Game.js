@@ -126,7 +126,7 @@ class Game extends Component {
     else if (this.targetWord === typed) {
       this.typedWords += 1;
       this.wpm = this.calculateWPM(performance.now());
-      this.updateScore("speed: " + this.wpm.toFixed(1));
+      this.updateScore(this.wpm.toFixed(1) + " wpm");
       this.text.splice(0, 1);
       this.userInput.current.value = "";
       this.targetWord = this.text[0];
@@ -171,7 +171,7 @@ class Game extends Component {
               {this.updateDisplayString()}
             </div>
             <div id="score" className="statContainer">
-              {"speed: " + this.wpm}
+            {this.wpm.toFixed(1) + " wpm"}
             </div>
           </div>
           <div id="score" className="statContainer">
